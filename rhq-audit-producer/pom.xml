@@ -1,0 +1,50 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <parent>
+        <groupId>org.rhq.audit</groupId>
+        <artifactId>rhq-audit-parent</artifactId>
+        <version>0.1</version>
+    </parent>
+
+    <groupId>org.rhq.audit</groupId>
+    <artifactId>rhq-audit-producer</artifactId>
+    <packaging>jar</packaging>
+    <version>0.1</version>
+    <name>RHQ Audit Producer</name>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.rhq.audit</groupId>
+            <artifactId>rhq-audit-common</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.testng</groupId>
+            <artifactId>testng</artifactId>
+            <scope>test</scope>
+        </dependency>
+
+        <dependency>
+            <groupId>javax.jms</groupId>
+            <artifactId>jms</artifactId>
+            <version>1.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.activemq</groupId>
+            <artifactId>activemq-all</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.rhq.audit</groupId>
+            <artifactId>rhq-audit-test-common</artifactId>
+            <version>${project.version}</version>
+            <scope>test</scope>
+        </dependency>
+
+    </dependencies>
+
+</project>
